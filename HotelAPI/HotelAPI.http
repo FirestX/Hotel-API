@@ -1,0 +1,27 @@
+POST http://localhost:5012/rooms
+Content-Type: application/json
+
+{
+  "id": 0,
+  "type": 1,
+  "price": 10,
+  "isAvailable": true,
+  "client": {
+    "id": 0,
+    "name": "string",
+    "surname": "string",
+    "email": "string",
+    "phone": "string"
+  }
+}
+
+###
+POST http://localhost:5012/rooms/1/bookings
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Maxim",
+  "email": "ex@gmail.com",
+  "phoneNumber": "+39 000 000 0000"
+}
